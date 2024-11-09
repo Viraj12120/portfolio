@@ -110,7 +110,23 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
 
 				{/* Resume */}
 				<div className="col-span-1 aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
-					<a href={resume} target="_blank" rel="noopener noreferrer">
+					<a
+						href={resume}
+						download="VirajD_Resume.pdf"
+						target="_blank"
+						rel="noopener noreferrer"
+						onClick={(e) => {
+							e.preventDefault();
+
+							window.open(resume, "_blank", "noopener,noreferrer");
+
+							const link = document.createElement("a");
+							link.href = resume;
+							link.setAttribute("download", "VirajD_Resume.pdf");
+							document.body.appendChild(link);
+							link.click();
+							document.body.removeChild(link);
+						}}>
 						<img
 							src={resumeImage}
 							alt="Resume"

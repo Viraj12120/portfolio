@@ -20,5 +20,5 @@ export const skills = [
 	"Learning UI/UX (Currently)",
 ];
 
-export const resume = "./Resume.pdf"; //resume is working fine now
+export const resume = "./resum.pdf"; //resume is working fine now
 export const contactFormsparkId = "";
