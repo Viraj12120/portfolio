@@ -120,7 +120,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
 				</div>
 
 				{/* Experience */}
-				<div className="col-span-1  aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
+				<div className="col-span-2  aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
 					<img
 						src={fresherLogo}
 						alt="Experience"
