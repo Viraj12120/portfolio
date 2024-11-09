@@ -118,8 +118,10 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
 						onClick={(e) => {
 							e.preventDefault();
 
+							// Open in new tab
 							window.open(resume, "_blank", "noopener,noreferrer");
 
+							// Trigger download
 							const link = document.createElement("a");
 							link.href = resume;
 							link.setAttribute("download", "VirajD_Resume.pdf");
@@ -136,7 +138,7 @@ const BentoLayout = ({ isDarkMode, toggleDarkMode }) => {
 				</div>
 
 				{/* Experience */}
-				<div className="col-span-2  aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
+				<div className="col-span-1  aspect-square rounded-xl border-transparent shadow-md overflow-hidden">
 					<img
 						src={fresherLogo}
 						alt="Experience"
